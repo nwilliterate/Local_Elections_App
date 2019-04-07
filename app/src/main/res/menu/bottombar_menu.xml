@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
         <item
-            android:id="@+id/navigation_candidate_info"
+            android:id="@+id/navigation_elections_info"
             android:icon="@drawable/ic_assignment_ind"
             android:title="선거 정보" />
 
         <item
-            android:id="@+id/navigation_candidate_search"
+            android:id="@+id/navigation_find_candidate"
             android:icon="@drawable/ic_search"
             android:title="후보자 찾기" />
 
         <item
-            android:id="@+id/navigation_candidate_location"
+            android:id="@+id/navigation_find_candidate_by_site"
             android:icon="@drawable/ic_location_on"
             android:title="현재 위치 후보자 검색" />
 
         <item
-            android:id="@+id/navigation_mycadidate"
+            android:id="@+id/navigation_find_polls"
             android:icon="@drawable/ic_star"
             android:title="현재 위치 투표소 검색" />
 </menu>
