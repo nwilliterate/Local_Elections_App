@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.ElectionsInfo1Fragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".View.ElectionsInfo1Fragment"
+    android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="fragment1" />
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:text="● 의의" />
 
-</FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="교육감/특별시장·광역시장·도지사/구청장·시장/군수/비례대표(특별시·광역시·도의원)/구의원·시의원·군의원/비례대표(구의원·시의원·군의원)의 선출을 위한 투표"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:text="● 투표자격" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="1999년 6월 14일 이전 탄생자\n(누구나 만 19살이 된 자)"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:text="● 준비물" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="신분증 : 주민등록증, 여권, 운전면허, 복지카드(장애인 등록증) 등"/>
+
+
+</LinearLayout>

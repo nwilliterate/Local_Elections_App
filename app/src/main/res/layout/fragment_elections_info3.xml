@@ -1,14 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.ElectionsInfo3Fragment">
+    tools:context=".View.ElectionsInfo3Fragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="fragment3" />
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:text="● 기본적인 주의 사항" />
 
-</FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="신분증은 필히 지참해야 합니다.\n투표용지와 기표소 내부는 촬영 금지!\n한 장에 한 명의 후보명 옆 칸에 도장찍기"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:text="● 투표 인증샷이 가능한가요?" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="가능합니다!\n공직선거법의 개정으로 손가락 등을 이용하여 지지 후보의 기호 등을 표기한 사진을 전송 혹은 게시할 수 있으며, 뿐만 아니라 (엑스 자 등의 포즈를 취하고)벽보 앞에서 사진을 찍는 것도 가능합니다. 하지만 벽보의 훼손, 기표함 내에서의 촬영, 투표용지의 촬영 등은 허용되지 않습니다."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:text="● 투표소 앞에서 지지하는 후보 밝힐 수 있나요?" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="투표소 반경 100m 내에서는 소란을 피우거나 특정 후보를 지지/반대하는 행위는 금지입니다."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:text="● 더 많은 정보를 받고싶어요!" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="더 자세한 내용은 1390 (선거콜센터) 혹은 중앙선거관리위원회로 확인하시기 바랍니다."/>
+
+</LinearLayout>
+</ScrollView>
