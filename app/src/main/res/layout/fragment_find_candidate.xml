@@ -33,7 +33,7 @@
             android:layout_weight="2" />
 
         <Spinner
-            android:id="@+id/vote_spinner"
+            android:id="@+id/types_candidate_spinner"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="2" />
