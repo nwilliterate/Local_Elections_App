@@ -1,32 +1,15 @@
 package com.example.local_elections_app.View;
 
 
-import android.Manifest;
-import android.content.Context;
-import android.content.pm.PackageManager;
-import android.location.Address;
-import android.location.Geocoder;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.app.Fragment;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.local_elections_app.Controller.LocationController;
 import com.example.local_elections_app.R;
-
-import org.w3c.dom.Text;
-
-import java.io.IOException;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
