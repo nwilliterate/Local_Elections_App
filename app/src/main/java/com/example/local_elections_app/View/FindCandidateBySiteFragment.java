@@ -13,6 +13,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.local_elections_app.Controller.LocationController;
+import com.example.local_elections_app.Model.Params;
 import com.example.local_elections_app.R;
 
 /**
@@ -21,10 +22,11 @@ import com.example.local_elections_app.R;
 public class FindCandidateBySiteFragment extends Fragment {
     LocationController locationController;
     TextView locationText;
+    Params params;
 
     public FindCandidateBySiteFragment() {
         // Required empty public constructor
-
+        params = new Params(2, "서울특별시", null);
     }
 
     @Override
@@ -63,7 +65,7 @@ public class FindCandidateBySiteFragment extends Fragment {
         typeCandidateSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+                params.setSgTypecode((position < 5) ? position + 2 : position + 3);
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) { }
@@ -72,7 +74,7 @@ public class FindCandidateBySiteFragment extends Fragment {
         findBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                // Create View
             }
         });
 

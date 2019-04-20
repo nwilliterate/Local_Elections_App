@@ -12,16 +12,18 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.example.local_elections_app.Model.Params;
 import com.example.local_elections_app.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class FindCandidateFragment extends Fragment {
-
+    Params params;
 
     public FindCandidateFragment() {
         // Required empty public constructor
+        params = new Params(2, "서울특별시",null);
     }
 
     @Override
@@ -52,7 +54,7 @@ public class FindCandidateFragment extends Fragment {
         typeCandidateSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+                params.setSgTypecode((position < 5) ? position + 2 : position + 3);
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) { }
@@ -60,7 +62,7 @@ public class FindCandidateFragment extends Fragment {
         citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+                params.setSdName(String.valueOf(parent.getItemAtPosition(position)));
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) { }
@@ -69,7 +71,7 @@ public class FindCandidateFragment extends Fragment {
         findBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                // Create List
             }
         });
 

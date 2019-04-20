@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.local_elections_app.Controller.LocationController;
+import com.example.local_elections_app.Model.Params;
 import com.example.local_elections_app.R;
 
 /**
@@ -18,9 +19,11 @@ import com.example.local_elections_app.R;
 public class FindPollsFragment extends Fragment {
     LocationController locationController;
     TextView locationText;
+    Params params;
 
     public FindPollsFragment() {
         // Required empty public constructor
+        params = new Params(0, "서울특별시", null);
     }
 
 
@@ -43,7 +46,7 @@ public class FindPollsFragment extends Fragment {
         findBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                // Create View
             }
         });
 
