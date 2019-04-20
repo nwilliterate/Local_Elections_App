@@ -10,7 +10,7 @@ public class Params {
         this.sggName = sggName;
     }
 
-    public int getSgTypecode() {
+    public int getSgTypeCode() {
         return sgTypeCode;
     }
 
@@ -22,7 +22,7 @@ public class Params {
         return sggName;
     }
 
-    public void setSgTypecode(int sgTypeCode) {
+    public void setSgTypeCode(int sgTypeCode) {
         this.sgTypeCode = sgTypeCode;
     }
 
