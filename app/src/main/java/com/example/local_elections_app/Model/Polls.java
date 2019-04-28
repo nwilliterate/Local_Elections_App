@@ -10,6 +10,8 @@ public class Polls {
     private String addr;         // 주소
     private String floor;        // 층수
 
+    public Polls(){}
+
     public Polls(String psName, String sdName, String wiwName, String emdName, String placeName, String addr, String floor) {
         this.psName = psName;
         this.sdName = sdName;
