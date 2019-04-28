@@ -26,10 +26,10 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 public class CommController {
-    private String url = "http://127.0.0.1";
-    private String TAG = "CommController";
+    private static String url = "http://127.0.0.1";
+    private static String TAG = "CommController";
 
-    private class FindTask extends AsyncTask<Params, Void, String>{
+    private static class FindTask extends AsyncTask<Params, Void, String>{
         String msg = "";
 
         @RequiresApi(api = Build.VERSION_CODES.O)
@@ -88,7 +88,7 @@ public class CommController {
         }
     }
 
-    public String recvResponse(Params params){
+    public static String recvResponse(Params params){
         String result = null;
         FindTask findTask = new FindTask();
 

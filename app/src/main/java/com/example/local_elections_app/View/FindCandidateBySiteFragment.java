@@ -9,12 +9,16 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.local_elections_app.Controller.CommController;
 import com.example.local_elections_app.Controller.LocationController;
 import com.example.local_elections_app.Model.Params;
 import com.example.local_elections_app.R;
+import com.example.local_elections_app.Unit.CustomList;
+import com.example.local_elections_app.Unit.JSONParser;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -75,6 +79,10 @@ public class FindCandidateBySiteFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // Create View
+                CustomList.CnddCustomList cnddCustomList = new CustomList.CnddCustomList(getActivity(),
+                        JSONParser.CadidateParser(CommController.recvResponse(params)));
+                ListView listView = v.findViewById(R.id.list_view);
+                listView.setAdapter(cnddCustomList);
             }
         });
 

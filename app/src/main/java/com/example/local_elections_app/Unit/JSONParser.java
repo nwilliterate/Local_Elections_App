@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class JSONParser {
 
-    public ArrayList<Candidate> CadidateParser(String jsonString) {
+    public static ArrayList<Candidate> CadidateParser(String jsonString) {
         ArrayList<Candidate> candidatesArrayList;
 
         try {
@@ -55,7 +55,7 @@ public class JSONParser {
         return candidatesArrayList;
     }
 
-    public ArrayList<Polls> PollsParser(String jsonString) {
+    public static ArrayList<Polls> PollsParser(String jsonString) {
         ArrayList<Polls> pollsArrayList;
 
         try {

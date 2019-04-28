@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class CustomList {
 
-    public class CnddCustomList extends ArrayAdapter<String> {
+    public static class CnddCustomList extends ArrayAdapter<String> {
         private  final Activity context;
         private ArrayList<Candidate> candidates;
 
@@ -45,7 +45,7 @@ public class CustomList {
         }
     }
 
-    public class PollsCustomList extends ArrayAdapter<String>{
+    public static class PollsCustomList extends ArrayAdapter<String>{
         private final Activity context;
         ArrayList<Polls> pollsArrayList;
 
