@@ -1,8 +1,16 @@
 package com.example.local_elections_app.Model;
 
 public class Params {
-    int sgTypeCode;
-    String sdName, sggName;
+    private int sgTypeCode;
+    private String sdName, sggName;
+    private int prmTypeCode;
+
+    public Params(int sgTypeCode, String sdName, String sggName, int prmTypeCode) {
+        this.sgTypeCode = sgTypeCode;
+        this.sdName = sdName;
+        this.sggName = sggName;
+        this.prmTypeCode = prmTypeCode;
+    }
 
     public Params(int sgTypeCode, String sdName, String sggName) {
         this.sgTypeCode = sgTypeCode;

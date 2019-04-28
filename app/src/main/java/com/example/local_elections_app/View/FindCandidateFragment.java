@@ -54,7 +54,7 @@ public class FindCandidateFragment extends Fragment {
         typeCandidateSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                params.setSgTypecode((position < 5) ? position + 2 : position + 3);
+                params.setSgTypeCode((position < 5) ? position + 2 : position + 3);
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) { }
