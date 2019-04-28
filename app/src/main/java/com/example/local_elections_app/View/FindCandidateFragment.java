@@ -23,7 +23,7 @@ public class FindCandidateFragment extends Fragment {
 
     public FindCandidateFragment() {
         // Required empty public constructor
-        params = new Params(2, "서울특별시",null);
+        params = new Params(2, "서울특별시",null, 0);
     }
 
     @Override

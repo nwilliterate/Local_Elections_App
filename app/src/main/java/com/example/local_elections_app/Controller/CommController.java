@@ -43,11 +43,18 @@ public class CommController {
 
             // Headers
             List<NameValuePair> nvPairs = new ArrayList<NameValuePair>();
-            nvPairs.add(new BasicNameValuePair("sgTypecode", String.valueOf(params[0].getSgTypeCode())));
-            nvPairs.add(new BasicNameValuePair("pageNo", "1"));
-            nvPairs.add(new BasicNameValuePair("numOfRows", "15"));
-            nvPairs.add(new BasicNameValuePair("sdName", params[0].getSdName()));
-            nvPairs.add(new BasicNameValuePair("sggName",params[0].getSggName()));
+            if(params[0].getPrmTypeCode() == 0) {
+                nvPairs.add(new BasicNameValuePair("sgTypecode", String.valueOf(params[0].getSgTypeCode())));
+                nvPairs.add(new BasicNameValuePair("pageNo", "1"));
+                nvPairs.add(new BasicNameValuePair("numOfRows", "15"));
+                nvPairs.add(new BasicNameValuePair("sdName", params[0].getSdName()));
+                nvPairs.add(new BasicNameValuePair("sggName", params[0].getSggName()));
+            }else if(params[0].getPrmTypeCode() == 1){
+                nvPairs.add(new BasicNameValuePair("pageNo", "1"));
+                nvPairs.add(new BasicNameValuePair("numOfRows", "15"));
+                nvPairs.add(new BasicNameValuePair("sdName", params[0].getSdName()));
+                nvPairs.add(new BasicNameValuePair("wiwName", params[0].getSggName()));
+            }
 
             try {
                 UrlEncodedFormEntity urlEncodedFormEntity = new UrlEncodedFormEntity(nvPairs, "utf-8");

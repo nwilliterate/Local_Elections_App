@@ -23,7 +23,7 @@ public class FindPollsFragment extends Fragment {
 
     public FindPollsFragment() {
         // Required empty public constructor
-        params = new Params(0, "서울특별시", null);
+        params = new Params(0, "서울특별시", null, 1);
     }
 
 
