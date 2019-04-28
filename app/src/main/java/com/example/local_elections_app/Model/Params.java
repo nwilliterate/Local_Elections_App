@@ -41,4 +41,12 @@ public class Params {
     public void setSggName(String sggName) {
         this.sggName = sggName;
     }
+
+    public int getPrmTypeCode() {
+        return prmTypeCode;
+    }
+
+    public void setPrmTypeCode(int prmTypeCode) {
+        this.prmTypeCode = prmTypeCode;
+    }
 }

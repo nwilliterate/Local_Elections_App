@@ -2,13 +2,13 @@ package com.example.local_elections_app.Model;
 
 public class Polls {
 
-    public String psName;       // 선거일투표소명
-    public String sdName;       // 시도명
-    public String wiwName;      // 위원회명
-    public String emdName;      // 읍면동명
-    public String placeName;    // 장소명
-    public String addr;         // 주소
-    public String floor;        // 층수
+    private String psName;       // 선거일투표소명
+    private String sdName;       // 시도명
+    private String wiwName;      // 위원회명
+    private String emdName;      // 읍면동명
+    private String placeName;    // 장소명
+    private String addr;         // 주소
+    private String floor;        // 층수
 
     public Polls(String psName, String sdName, String wiwName, String emdName, String placeName, String addr, String floor) {
         this.psName = psName;
@@ -75,4 +75,5 @@ public class Polls {
     public void setFloor(String floor) {
         this.floor = floor;
     }
+
 }
