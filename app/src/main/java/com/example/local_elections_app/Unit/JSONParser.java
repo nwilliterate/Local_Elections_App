@@ -88,4 +88,27 @@ public class JSONParser {
         }
         return pollsArrayList;
     }
+
+    public static String[] LoginParser(String jsonString){
+        String access_token = null;
+        String message = null;
+        String error = null;
+
+        String[] arraysum = new String[2];
+        try{
+            JSONObject obj = new JSONObject(jsonString);
+
+            access_token = obj.optString("access_token");
+            message = obj.optString("message");
+
+            if(access_token != null) {
+                arraysum[0] = access_token;
+                arraysum[1] = message;
+            }else
+                arraysum[1] = "Login failed";
+        } catch (JSONException e1) {
+            e1.printStackTrace();
+        }
+        return arraysum;
+    }
 }
